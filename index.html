@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz dla Dzieci</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <button id="wynikiPrzycisk" style="display: none">
+        Jestem nauczycielem
+      </button>
+      <!-- W przyszlosci mozna dodac ze kazda literka kolorowa  -->
+      <h1 id="noneH1">Quiz dla dzieci</h1>
+    </header>
+    <main class="quiz">
+      <div id="none" class="quiz quiz__page">
+        <h2 class="quiz__page--h2">Zwierzęta</h2>
+      </div>
+      <div id="podanie-nazwy" class="quiz quiz__input">
+        <input
+          type="text"
+          id="nazwa"
+          class="quiz__input quiz__input--text"
+          placeholder="Podaj swoje imię"
+        />
+
+        <button id="start" class="quiz__input quiz__input--start">
+          Rozpocznij quiz
+        </button>
+      </div>
+      <footer id="noneFooter" class="quiz__footer">
+        <p class="quiz__footer--content">
+          Stacja Edukacja Szkoła Języka Angielskiego Olszewo-Borki
+        </p>
+      </footer>
+      <!-- class unactive active!!! -->
+      <!-- line 44 -->
+      <section id="qsANDas" class="questionsANDanswers" style="display: none">
+        <div class="quiz__question" style="display: none">
+          <div id="timer">00:00</div>
+          <h2 class="quiz__question quiz__question--content" id="pytanie">
+            Pytanie
+          </h2>
+          <div class="img">
+            <img id="zwierzeta" src="img/1.jpg" />
+          </div>
+          <div class="quiz__answers">
+            <button class="quiz__answers quiz__answers--answer">odp1</button>
+            <button class="quiz__answers quiz__answers--answer">odp2</button>
+            <button class="quiz__answers quiz__answers--answer">odp3</button>
+          </div>
+          <div class="strzalka">
+            <button id="nastepne">NEXT</button>
+          </div>
+          <button id="zobacz-wyniki" style="display: none">
+            Zobacz wyniki
+          </button>
+        </div>
+        <div id="wynik">
+          <img src="" alt="" id="obrazek_wynik" />
+          <p class="wynik__text"></p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
