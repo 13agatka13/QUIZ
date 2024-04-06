@@ -524,6 +524,7 @@ function WybierzPytanie(e) {
 function PokazWynik() {
   const nazwagracza = nazwa.value;
   Reset();
+  completionTime = pokazanyCzas.innerHTML
   clearInterval(zegar);
   document.getElementById(
     "pytanie"
