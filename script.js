@@ -524,6 +524,7 @@ function WybierzPytanie(e) {
 function PokazWynik() {
   const nazwagracza = nazwa.value;
   Reset();
+  clearInterval(zegar);
   document.getElementById(
     "pytanie"
   ).innerHTML = `${nazwagracza} zdobyłeś ${wynik} na 20 punktów!`;
@@ -535,13 +536,13 @@ function PokazWynik() {
   let p = document.querySelector(".wynik__text");
   let img = document.getElementById("obrazek_wynik");
   1;
-  if (wynik <= 20) {
+  if (wynik <= 20 && wynik >= 16) {
     img.setAttribute("src", "happy_face.png");
     p.textContent = "You are doing great";
   } else if (wynik <= 15 && wynik >= 10) {
     img.setAttribute("src", "happy_face.png");
     p.textContent = "You are doing fine";
-  } else if (wynik <= 10 && wynik >= 6) {
+  } else if (wynik <= 9 && wynik >= 6) {
     img.setAttribute("src", "sad_face.png");
     p.textContent = "Keep practicing";
   } else if (wynik <= 5) {
