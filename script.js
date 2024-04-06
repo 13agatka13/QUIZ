@@ -1,398 +1,398 @@
-const pytania = [
+const questions = [
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/1.jpg",
-    odpowiedzii: [
-      { tekst: "dog", poprawna: false },
-      { tekst: "cat", poprawna: false },
-      { tekst: "frog", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/1.jpg",
+    answers: [
+      { text: "dog", correct: false },
+      { text: "cat", correct: false },
+      { text: "frog", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/2.jpg",
-    odpowiedzii: [
-      { tekst: "bat", poprawna: false },
-      { tekst: "turtle", poprawna: true },
-      { tekst: "duck", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/2.jpg",
+    answers: [
+      { text: "bat", correct: false },
+      { text: "turtle", correct: true },
+      { text: "duck", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/3.jpg",
-    odpowiedzii: [
-      { tekst: "bee", poprawna: false },
-      { tekst: "snake", poprawna: true },
-      { tekst: "camel", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/3.jpg",
+    answers: [
+      { text: "bee", correct: false },
+      { text: "snake", correct: true },
+      { text: "camel", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/4.jpg",
-    odpowiedzii: [
-      { tekst: "goat", poprawna: false },
-      { tekst: "monkey", poprawna: true },
-      { tekst: "owl", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/4.jpg",
+    answers: [
+      { text: "goat", correct: false },
+      { text: "monkey", correct: true },
+      { text: "owl", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/5.jpg",
-    odpowiedzii: [
-      { tekst: "fish", poprawna: false },
-      { tekst: "crab", poprawna: false },
-      { tekst: "owl", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/5.jpg",
+    answers: [
+      { text: "fish", correct: false },
+      { text: "crab", correct: false },
+      { text: "owl", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/6.jpg",
-    odpowiedzii: [
-      { tekst: "bird", poprawna: false },
-      { tekst: "lion", poprawna: true },
-      { tekst: "cow", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/6.jpg",
+    answers: [
+      { text: "bird", correct: false },
+      { text: "lion", correct: true },
+      { text: "cow", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/7.jpg",
-    odpowiedzii: [
-      { tekst: "sheep", poprawna: false },
-      { tekst: "zebra", poprawna: true },
-      { tekst: "pig", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/7.jpg",
+    answers: [
+      { text: "sheep", correct: false },
+      { text: "zebra", correct: true },
+      { text: "pig", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/8.jpg",
-    odpowiedzii: [
-      { tekst: "owl", poprawna: false },
-      { tekst: "pig", poprawna: true },
-      { tekst: "cow", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/8.jpg",
+    answers: [
+      { text: "owl", correct: false },
+      { text: "pig", correct: true },
+      { text: "cow", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/9.jpg",
-    odpowiedzii: [
-      { tekst: "elephant", poprawna: false },
-      { tekst: "cow", poprawna: false },
-      { tekst: "sheep", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/9.jpg",
+    answers: [
+      { text: "elephant", correct: false },
+      { text: "cow", correct: false },
+      { text: "sheep", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/10.jpg",
-    odpowiedzii: [
-      { tekst: "cat", poprawna: false },
-      { tekst: "fox", poprawna: true },
-      { tekst: "horse", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/10.jpg",
+    answers: [
+      { text: "cat", correct: false },
+      { text: "fox", correct: true },
+      { text: "horse", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/11.jpg",
-    odpowiedzii: [
-      { tekst: "fox", poprawna: false },
-      { tekst: "rat", poprawna: true },
-      { tekst: "cat", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/11.jpg",
+    answers: [
+      { text: "fox", correct: false },
+      { text: "rat", correct: true },
+      { text: "cat", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/12.jpg",
-    odpowiedzii: [
-      { tekst: "nov", poprawna: false },
-      { tekst: "bee", poprawna: true },
-      { tekst: "mouse", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/12.jpg",
+    answers: [
+      { text: "nov", correct: false },
+      { text: "bee", correct: true },
+      { text: "mouse", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/13.jpg",
-    odpowiedzii: [
-      { tekst: "mouse", poprawna: false },
-      { tekst: "goat", poprawna: false },
-      { tekst: "elephant", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/13.jpg",
+    answers: [
+      { text: "mouse", correct: false },
+      { text: "goat", correct: false },
+      { text: "elephant", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/14.jpg",
-    odpowiedzii: [
-      { tekst: "whale", poprawna: false },
-      { tekst: "shark", poprawna: true },
-      { tekst: "Parrot", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/14.jpg",
+    answers: [
+      { text: "whale", correct: false },
+      { text: "shark", correct: true },
+      { text: "Parrot", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/15.jpg",
-    odpowiedzii: [
-      { tekst: "whale", poprawna: false },
-      { tekst: "fish", poprawna: true },
-      { tekst: "shark", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/15.jpg",
+    answers: [
+      { text: "whale", correct: false },
+      { text: "fish", correct: true },
+      { text: "shark", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/16.jpg",
-    odpowiedzii: [
-      { tekst: "whale", poprawna: false },
-      { tekst: "tiger", poprawna: true },
-      { tekst: "eagle", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/16.jpg",
+    answers: [
+      { text: "whale", correct: false },
+      { text: "tiger", correct: true },
+      { text: "eagle", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/17.jpg",
-    odpowiedzii: [
-      { tekst: "goat", poprawna: false },
-      { tekst: "bull", poprawna: false },
-      { tekst: "cow", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/17.jpg",
+    answers: [
+      { text: "goat", correct: false },
+      { text: "bull", correct: false },
+      { text: "cow", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/18.jpg",
-    odpowiedzii: [
-      { tekst: "ant", poprawna: false },
-      { tekst: "horse", poprawna: true },
-      { tekst: "hen", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/18.jpg",
+    answers: [
+      { text: "ant", correct: false },
+      { text: "horse", correct: true },
+      { text: "hen", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/19.jpg",
-    odpowiedzii: [
-      { tekst: "bird", poprawna: false },
-      { tekst: "duck", poprawna: true },
-      { tekst: "chicken", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/19.jpg",
+    answers: [
+      { text: "bird", correct: false },
+      { text: "duck", correct: true },
+      { text: "chicken", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/20.jpg",
-    odpowiedzii: [
-      { tekst: "owl", poprawna: false },
-      { tekst: "goose", poprawna: true },
-      { tekst: "deer", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/20.jpg",
+    answers: [
+      { text: "owl", correct: false },
+      { text: "goose", correct: true },
+      { text: "deer", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/21.jpg",
-    odpowiedzii: [
-      { tekst: "cat", poprawna: false },
-      { tekst: "bear", poprawna: false },
-      { tekst: "chicken", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/21.jpg",
+    answers: [
+      { text: "cat", correct: false },
+      { text: "bear", correct: false },
+      { text: "chicken", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/22.jpg",
-    odpowiedzii: [
-      { tekst: "cow", poprawna: false },
-      { tekst: "goat", poprawna: true },
-      { tekst: "dog", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/22.jpg",
+    answers: [
+      { text: "cow", correct: false },
+      { text: "goat", correct: true },
+      { text: "dog", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/23.jpg",
-    odpowiedzii: [
-      { tekst: "cat", poprawna: false },
-      { tekst: "dog", poprawna: true },
-      { tekst: "cow", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/23.jpg",
+    answers: [
+      { text: "cat", correct: false },
+      { text: "dog", correct: true },
+      { text: "cow", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/24.jpg",
-    odpowiedzii: [
-      { tekst: "dog", poprawna: false },
-      { tekst: "cat", poprawna: true },
-      { tekst: "bird", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/24.jpg",
+    answers: [
+      { text: "dog", correct: false },
+      { text: "cat", correct: true },
+      { text: "bird", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/25.jpg",
-    odpowiedzii: [
-      { tekst: "bird", poprawna: false },
-      { tekst: "squirrel", poprawna: false },
-      { tekst: "parrot", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/25.jpg",
+    answers: [
+      { text: "bird", correct: false },
+      { text: "squirrel", correct: false },
+      { text: "parrot", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/26.jpg",
-    odpowiedzii: [
-      { tekst: "camel", poprawna: false },
-      { tekst: "hamster", poprawna: true },
-      { tekst: "lion", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/26.jpg",
+    answers: [
+      { text: "camel", correct: false },
+      { text: "hamster", correct: true },
+      { text: "lion", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/27.jpg",
-    odpowiedzii: [
-      { tekst: "hamster", poprawna: false },
-      { tekst: "spider", poprawna: true },
-      { tekst: "lyns", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/27.jpg",
+    answers: [
+      { text: "hamster", correct: false },
+      { text: "spider", correct: true },
+      { text: "lyns", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/28.jpg",
-    odpowiedzii: [
-      { tekst: "lynx", poprawna: false },
-      { tekst: "sheep", poprawna: false },
-      { tekst: "giraffe", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/28.jpg",
+    answers: [
+      { text: "lynx", correct: false },
+      { text: "sheep", correct: false },
+      { text: "giraffe", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/29.jpg",
-    odpowiedzii: [
-      { tekst: "monkey", poprawna: false },
-      { tekst: "hipp", poprawna: true },
-      { tekst: "elephant", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/29.jpg",
+    answers: [
+      { text: "monkey", correct: false },
+      { text: "hipp", correct: true },
+      { text: "elephant", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/30.jpg",
-    odpowiedzii: [
-      { tekst: "hippo", poprawna: false },
-      { tekst: "rhino", poprawna: true },
-      { tekst: "horse", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/30.jpg",
+    answers: [
+      { text: "hippo", correct: false },
+      { text: "rhino", correct: true },
+      { text: "horse", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/31.jpg",
-    odpowiedzii: [
-      { tekst: "eagle", poprawna: false },
-      { tekst: "whale", poprawna: true },
-      { tekst: "tiger", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/31.jpg",
+    answers: [
+      { text: "eagle", correct: false },
+      { text: "whale", correct: true },
+      { text: "tiger", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/32.jpg",
-    odpowiedzii: [
-      { tekst: "bear", poprawna: false },
-      { tekst: "bison", poprawna: false },
-      { tekst: "butterfly", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/32.jpg",
+    answers: [
+      { text: "bear", correct: false },
+      { text: "bison", correct: false },
+      { text: "butterfly", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/33.jpg",
-    odpowiedzii: [
-      { tekst: "salmon", poprawna: false },
-      { tekst: "housefly", poprawna: true },
-      { tekst: "butterfly", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/33.jpg",
+    answers: [
+      { text: "salmon", correct: false },
+      { text: "housefly", correct: true },
+      { text: "butterfly", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/34.jpg",
-    odpowiedzii: [
-      { tekst: "bird", poprawna: false },
-      { tekst: "mosquito", poprawna: true },
-      { tekst: "salmon", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/34.jpg",
+    answers: [
+      { text: "bird", correct: false },
+      { text: "mosquito", correct: true },
+      { text: "salmon", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/35.jpg",
-    odpowiedzii: [
-      { tekst: "bird", poprawna: false },
-      { tekst: "ladybird", poprawna: true },
-      { tekst: "butterfly", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/35.jpg",
+    answers: [
+      { text: "bird", correct: false },
+      { text: "ladybird", correct: true },
+      { text: "butterfly", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/36.jpg",
-    odpowiedzii: [
-      { tekst: "butterfly", poprawna: false },
-      { tekst: "hen", poprawna: false },
-      { tekst: "ant", poprawna: true },
+    question: "What is the name of this animal?",
+    image: "img/36.jpg",
+    answers: [
+      { text: "butterfly", correct: false },
+      { text: "hen", correct: false },
+      { text: "ant", correct: true },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/37.jpg",
-    odpowiedzii: [
-      { tekst: "ant", poprawna: false },
-      { tekst: "squirrel", poprawna: true },
-      { tekst: "starling", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/37.jpg",
+    answers: [
+      { text: "ant", correct: false },
+      { text: "squirrel", correct: true },
+      { text: "starling", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/38.jpg",
-    odpowiedzii: [
-      { tekst: "hen", poprawna: false },
-      { tekst: "hedgehog", poprawna: true },
-      { tekst: "fox", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/38.jpg",
+    answers: [
+      { text: "hen", correct: false },
+      { text: "hedgehog", correct: true },
+      { text: "fox", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/39.jpg",
-    odpowiedzii: [
-      { tekst: "chcik", poprawna: false },
-      { tekst: "camel", poprawna: true },
-      { tekst: "horse", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/39.jpg",
+    answers: [
+      { text: "chcik", correct: false },
+      { text: "camel", correct: true },
+      { text: "horse", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/40.jpg",
-    odpowiedzii: [
-      { tekst: "pig", poprawna: false },
-      { tekst: "kangaroo", poprawna: true },
-      { tekst: "puppy", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/40.jpg",
+    answers: [
+      { text: "pig", correct: false },
+      { text: "kangaroo", correct: true },
+      { text: "puppy", correct: false },
     ],
   },
   {
-    pytanie: "What is the name of this animal?",
-    obraz: "img/41.jpg",
-    odpowiedzii: [
-      { tekst: "camel", poprawna: false },
-      { tekst: "crocodile", poprawna: true },
-      { tekst: "turtle", poprawna: false },
+    question: "What is the name of this animal?",
+    image: "img/41.jpg",
+    answers: [
+      { text: "camel", correct: false },
+      { text: "crocodile", correct: true },
+      { text: "turtle", correct: false },
     ],
   },
 ];
 //Zegar
-let [sekundy, minuty] = [0, 0];
-let zegar = null;
-let pokazanyCzas = document.getElementById("timer");
+let [seconds, minutes] = [0, 0];
+let clock = null;
+let shownTime = document.getElementById("timer");
 function Czas() {
-  sekundy++;
+  seconds++;
 
-  if (sekundy == 60) {
-    minuty++;
-    sekundy = 0;
+  if (seconds == 60) {
+    minutes++;
+    seconds = 0;
   }
-  if (sekundy < 10 && minuty < 10) {
-    pokazanyCzas.innerHTML = "0" + minuty + ":0" + sekundy;
-  } else if (sekundy < 10) {
-    pokazanyCzas.innerHTML = minuty + ":0" + sekundy;
-  } else if (sekundy >= 10 && minuty < 10) {
-    pokazanyCzas.innerHTML = "0" + minuty + ":" + sekundy;
+  if (seconds < 10 && minutes < 10) {
+    shownTime.innerHTML = "0" + minutes + ":0" + seconds;
+  } else if (seconds < 10) {
+    shownTime.innerHTML = minutes + ":0" + seconds;
+  } else if (seconds >= 10 && minutes < 10) {
+    shownTime.innerHTML = "0" + minutes + ":" + seconds;
   } else {
-    pokazanyCzas.innerHTML = minuty + sekundy;
+    shownTime.innerHTML = minutes + seconds;
   }
 }
 
-function StartZegara() {
-  zegar = setInterval(Czas, 1000);
+function ClockStart() {
+  clock = setInterval(Czas, 1000);
 }
 
 document
@@ -401,16 +401,15 @@ document
     window.location.href = "wyniki.php";
   });
 
-const pytanieElementId = document.getElementById("pytanie");
-const odpowiedz = document.querySelector(".quiz__answers");
-const przyciskNastepne = document.getElementById("nastepne");
-const nazwa = document.querySelector("#nazwa");
+const questionElementId = document.getElementById("pytanie");
+const answer = document.querySelector(".quiz__answers");
+const nextButton = document.getElementById("nastepne");
+const username = document.querySelector("#nazwa");
 const startQuizBtn = document.querySelector(".quiz__input--start");
 const quizContainer = document.querySelector(".quiz__question");
 
-let aktualnePytanieIndex = 0;
-let wynik = 0;
-let czasUkonczenia = "";
+let currentQuestionIndex = 0;
+let score = 0;
 
 function getRandomElementsFromArray(
   array,
@@ -434,7 +433,7 @@ function getRandomElementsFromArray(
   return getRandomElement([...array]);
 }
 
-//Losowa kolejnosc pytań
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -443,8 +442,8 @@ function shuffleArray(array) {
 }
 
 startQuizBtn.addEventListener("click", () => {
-  const nazwauzytkownika = nazwa.value.trim();
-  if (nazwauzytkownika) {
+  const user = username.value.trim();
+  if (user) {
     document.getElementById("podanie-nazwy").style.display = "none";
     document.getElementById("none").style.display = "none";
     document.getElementById("noneH1").style.display = "none";
@@ -453,83 +452,83 @@ startQuizBtn.addEventListener("click", () => {
     document.getElementById("wynikiPrzycisk").style.display = "flex";
     document.getElementById("qsANDas").style.display = "block";
     quizContainer.style.display = "flex";
-    RozpoczecieQuizu();
+    StartQuiz();
   } else {
     alert("Podaj nazwę");
   }
 });
 
-function RozpoczecieQuizu() {
+function StartQuiz() {
   Reset();
-  aktualnePytanieIndex = 0;
-  selectedQuestions = getRandomElementsFromArray(pytania, 20);
-  wynik = 0;
-  przyciskNastepne.innerHTML = "NEXT";
-  pokazPytania();
-  StartZegara();
+  currentQuestionIndex = 0;
+  selectedQuestions = getRandomElementsFromArray(questions, 20);
+  score = 0;
+  nextButton.innerHTML = "NEXT";
+  showQuestions();
+  ClockStart();
 }
 
-function pokazPytania() {
-  let aktualnePytanie = selectedQuestions[aktualnePytanieIndex];
-  let questionNo = aktualnePytanieIndex + 1;
-  pytanieElementId.innerHTML = questionNo + ". " + aktualnePytanie.pytanie;
-  document.getElementById("zwierzeta").src = aktualnePytanie.obraz;
+function showQuestions() {
+  let currentQuestion = selectedQuestions[currentQuestionIndex];
+  let questionNo = currentQuestionIndex + 1;
+  questionElementId.innerHTML = questionNo + ". " + currentQuestion.question;
+  document.getElementById("zwierzeta").src = currentQuestion.image;
 
-  shuffleArray(aktualnePytanie.odpowiedzii);
+  shuffleArray(currentQuestion.answers);
 
-  while (odpowiedz.firstChild) {
-    odpowiedz.removeChild(odpowiedz.firstChild);
+  while (answer.firstChild) {
+    answer.removeChild(answer.firstChild);
   }
 
-  aktualnePytanie.odpowiedzii.forEach((odp) => {
-    const przycisk = document.createElement("button");
-    przycisk.innerHTML = odp.tekst;
-    przycisk.classList.add("odpowiedzi");
-    odpowiedz.appendChild(przycisk);
-    if (odp.poprawna) {
-      przycisk.dataset.poprawne = odp.poprawna;
+  currentQuestion.answers.forEach((ans) => {
+    const button = document.createElement("button");
+    button.innerHTML = ans.text;
+    button.classList.add("odpowiedzi");
+    answer.appendChild(button);
+    if (ans.correct) {
+      button.dataset.poprawne = ans.correct;
     }
-    przycisk.addEventListener("click", WybierzPytanie);
+    button.addEventListener("click", ChooseAnswer);
   });
 }
 
 function Reset() {
-  przyciskNastepne.style.display = "none";
-  while (odpowiedz.firstChild) {
-    odpowiedz.removeChild(odpowiedz.firstChild);
+  nextButton.style.display = "none";
+  while (answer.firstChild) {
+    answer.removeChild(answer.firstChild);
   }
 }
-// ??
+
 document.getElementById("nastepne").style.display = "none";
 
-function WybierzPytanie(e) {
-  const wybranyPrzycisk = e.target;
-  const poprawny = wybranyPrzycisk.dataset.poprawne === "true";
-  if (poprawny) {
-    wybranyPrzycisk.classList.add("poprawne");
-    wynik++;
+function ChooseAnswer(e) {
+  const chosenButton = e.target;
+  const correctButton = chosenButton.dataset.poprawne === "true";
+  if (correctButton) {
+    chosenButton.classList.add("poprawne");
+    score++;
   } else {
-    wybranyPrzycisk.classList.add("niepoprawne");
+    chosenButton.classList.add("niepoprawne");
   }
 
-  Array.from(odpowiedz.children).forEach((button) => {
+  Array.from(answer.children).forEach((button) => {
     if (button.dataset.poprawne === "true") {
       button.classList.add("poprawne");
     }
     button.disabled = true;
   });
-  przyciskNastepne.style.display = "flex";
+  nextButton.style.display = "flex";
 }
 
-function PokazWynik() {
-  const nazwagracza = nazwa.value;
+function ShowScore() {
+  const studentName = username.value;
   Reset();
-  completionTime = pokazanyCzas.innerHTML
-  clearInterval(zegar);
+  completionTime = shownTime.innerHTML
+  clearInterval(clock);
   document.getElementById(
     "pytanie"
-  ).innerHTML = `${nazwagracza} zdobyłeś ${wynik} na 20 punktów!`;
-  przyciskNastepne.style.display = "none";
+  ).innerHTML = `${studentName} zdobyłeś ${score} na 20 punktów!`;
+  nextButton.style.display = "none";
   document.getElementById("zwierzeta").style.display = "none";
   document.querySelector(".quiz__answers").style.display = "none";
   document.getElementById("zobacz-wyniki").style.display = "flex";
@@ -537,16 +536,16 @@ function PokazWynik() {
   let p = document.querySelector(".wynik__text");
   let img = document.getElementById("obrazek_wynik");
   1;
-  if (wynik <= 20 && wynik >= 16) {
+  if (score <= 20 && score >= 16) {
     img.setAttribute("src", "happy_face.png");
     p.textContent = "You are doing great";
-  } else if (wynik <= 15 && wynik >= 10) {
+  } else if (score <= 15 && score >= 10) {
     img.setAttribute("src", "happy_face.png");
     p.textContent = "You are doing fine";
-  } else if (wynik <= 9 && wynik >= 6) {
+  } else if (score <= 9 && score >= 6) {
     img.setAttribute("src", "sad_face.png");
     p.textContent = "Keep practicing";
-  } else if (wynik <= 5) {
+  } else if (score <= 5) {
     img.setAttribute("src", "sad_face.png");
     p.textContent = "Not good";
   }
@@ -557,20 +556,20 @@ function PokazWynik() {
   // xhr.onreadystatechange = function () {};
   var data =
     "nazwa=" +
-    encodeURIComponent(nazwagracza) +
+    encodeURIComponent(studentName) +
     "&wynik=" +
-    encodeURIComponent(wynik) +
+    encodeURIComponent(score) +
     "&czas=" +
     encodeURIComponent(completionTime);
   xhr.send(data);
 }
 function handleNextButton() {
-  aktualnePytanieIndex++;
-  if (aktualnePytanieIndex < 20) {
-    pokazPytania();
-    przyciskNastepne.style.display = "none";
+  currentQuestionIndex++;
+  if (currentQuestionIndex < 20) {
+    showQuestions();
+    nextButton.style.display = "none";
   } else {
-    PokazWynik();
+    ShowScore();
   }
 }
 
@@ -578,10 +577,10 @@ document.getElementById("zobacz-wyniki").addEventListener("click", function () {
   window.location.href = "wyniki_uczniow.php";
 });
 
-przyciskNastepne.addEventListener("click", () => {
-  if (aktualnePytanieIndex < pytania.length) {
+nextButton.addEventListener("click", () => {
+  if (currentQuestionIndex < questions.length) {
     handleNextButton();
   } else {
-    RozpoczecieQuizu();
+    StartQuiz();
   }
 });
