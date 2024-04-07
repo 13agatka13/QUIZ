@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <button id="wynikiPrzycisk" style="display: none">
+      <button id="resultsButton" style="display: none">
         Jestem nauczycielem
       </button>
       <!-- W przyszlosci mozna dodac ze kazda literka kolorowa  -->
@@ -20,10 +20,10 @@
       <div id="none" class="quiz quiz__page">
         <h2 class="quiz__page--h2">Zwierzęta</h2>
       </div>
-      <div id="podanie-nazwy" class="quiz quiz__input">
+      <div id="name-input" class="quiz quiz__input">
         <input
           type="text"
-          id="nazwa"
+          id="name"
           class="quiz__input quiz__input--text"
           placeholder="Podaj swoje imię"
         />
@@ -46,23 +46,23 @@
             Pytanie
           </h2>
           <div class="img">
-            <img id="zwierzeta" src="img/1.jpg" />
+            <img id="animals" src="img/1.jpg" />
           </div>
           <div class="quiz__answers">
             <button class="quiz__answers quiz__answers--answer">odp1</button>
             <button class="quiz__answers quiz__answers--answer">odp2</button>
             <button class="quiz__answers quiz__answers--answer">odp3</button>
           </div>
-          <div class="strzalka">
-            <button id="nastepne">NEXT</button>
+          <div class="arrow">
+            <button id="qsNext">NEXT</button>
           </div>
-          <button id="zobacz-wyniki" style="display: none">
+          <button id="see-results" style="display: none">
             Zobacz wyniki
           </button>
         </div>
-        <div id="wynik">
-          <img src="" alt="" id="obrazek_wynik" />
-          <p class="wynik__text"></p>
+        <div id="result">
+          <img src="" alt="" id="result-image" />
+          <p class="result-text"></p>
         </div>
       </section>
     </main>

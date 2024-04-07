@@ -396,15 +396,15 @@ function ClockStart() {
 }
 
 document
-  .getElementById("wynikiPrzycisk")
+  .getElementById("resultsButton")
   .addEventListener("click", function () {
     window.location.href = "wyniki.php";
   });
 
 const questionElementId = document.getElementById("pytanie");
 const answer = document.querySelector(".quiz__answers");
-const nextButton = document.getElementById("nastepne");
-const username = document.querySelector("#nazwa");
+const nextButton = document.getElementById("qsNext");
+const username = document.querySelector("#name");
 const startQuizBtn = document.querySelector(".quiz__input--start");
 const quizContainer = document.querySelector(".quiz__question");
 
@@ -444,12 +444,12 @@ function shuffleArray(array) {
 startQuizBtn.addEventListener("click", () => {
   const user = username.value.trim();
   if (user) {
-    document.getElementById("podanie-nazwy").style.display = "none";
+    document.getElementById("name-input").style.display = "none";
     document.getElementById("none").style.display = "none";
     document.getElementById("noneH1").style.display = "none";
     document.getElementById("noneFooter").style.display = "none";
-    document.getElementById("obrazek_wynik").style.display = "none";
-    document.getElementById("wynikiPrzycisk").style.display = "flex";
+    document.getElementById("result-image").style.display = "none";
+    document.getElementById("resultsButton").style.display = "flex";
     document.getElementById("qsANDas").style.display = "block";
     quizContainer.style.display = "flex";
     StartQuiz();
@@ -472,7 +472,7 @@ function showQuestions() {
   let currentQuestion = selectedQuestions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElementId.innerHTML = questionNo + ". " + currentQuestion.question;
-  document.getElementById("zwierzeta").src = currentQuestion.image;
+  document.getElementById("animals").src = currentQuestion.image;
 
   shuffleArray(currentQuestion.answers);
 
@@ -483,10 +483,10 @@ function showQuestions() {
   currentQuestion.answers.forEach((ans) => {
     const button = document.createElement("button");
     button.innerHTML = ans.text;
-    button.classList.add("odpowiedzi");
+    button.classList.add("answers");
     answer.appendChild(button);
     if (ans.correct) {
-      button.dataset.poprawne = ans.correct;
+      button.dataset.correct = ans.correct;
     }
     button.addEventListener("click", ChooseAnswer);
   });
@@ -499,21 +499,21 @@ function Reset() {
   }
 }
 
-document.getElementById("nastepne").style.display = "none";
+document.getElementById("qsNext").style.display = "none";
 
 function ChooseAnswer(e) {
   const chosenButton = e.target;
-  const correctButton = chosenButton.dataset.poprawne === "true";
+  const correctButton = chosenButton.dataset.correct === "true";
   if (correctButton) {
-    chosenButton.classList.add("poprawne");
+    chosenButton.classList.add("correct");
     score++;
   } else {
-    chosenButton.classList.add("niepoprawne");
+    chosenButton.classList.add("incorrect");
   }
 
   Array.from(answer.children).forEach((button) => {
-    if (button.dataset.poprawne === "true") {
-      button.classList.add("poprawne");
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
     }
     button.disabled = true;
   });
@@ -529,12 +529,12 @@ function ShowScore() {
     "pytanie"
   ).innerHTML = `${studentName} zdobyłeś ${score} na 20 punktów!`;
   nextButton.style.display = "none";
-  document.getElementById("zwierzeta").style.display = "none";
+  document.getElementById("animals").style.display = "none";
   document.querySelector(".quiz__answers").style.display = "none";
-  document.getElementById("zobacz-wyniki").style.display = "flex";
-  document.getElementById("obrazek_wynik").style.display = "flex";
-  let p = document.querySelector(".wynik__text");
-  let img = document.getElementById("obrazek_wynik");
+  document.getElementById("see-results").style.display = "flex";
+  document.getElementById("result-image").style.display = "flex";
+  let p = document.querySelector(".result-text");
+  let img = document.getElementById("result-image");
   1;
   if (score <= 20 && score >= 16) {
     img.setAttribute("src", "happy_face.png");
@@ -573,7 +573,7 @@ function handleNextButton() {
   }
 }
 
-document.getElementById("zobacz-wyniki").addEventListener("click", function () {
+document.getElementById("see-results").addEventListener("click", function () {
   window.location.href = "wyniki_uczniow.php";
 });
 

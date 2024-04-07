@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styl.css" />
 </head>
 <body>
-    <div class="tabelka__wyniki">
+    <div class="results_table">
         <h3>Wyniki uczniów</h3>
-        <table border="1" cellspacing="2" cellpadding="2" class="php_tableka">
+        <table border="1" cellspacing="2" cellpadding="2" class="php_table">
         <tr>
             <th>Nazwa</th>
             <th>Wynik</th>
