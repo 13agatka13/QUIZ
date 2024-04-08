@@ -347,3 +347,35 @@ header h1 {
 .php_table th {
   background-color: var(--color3);
 }
+
+/*  TEACHER PAGE */
+
+.teacher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color1);
+  color: var(--color2);
+  width: 100%;
+  height: 100vh;
+}
+.teacher__page--password input {
+  background-color: var(--color3);
+  width: 250px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.teacher__page--password input::placeholder {
+  font-size: 1.4em;
+  color: var(--color1);
+  text-align: center;
+}
+
+.teacher__page--button {
+  margin-top: 50px;
+  width: 150px;
+  height: 25px;
+  background-color: var(--color2);
+}

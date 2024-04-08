@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Quiz for Kids</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <main class="teacher">
+      <div class="teacher__page teacher__page--password">
+        <input type="password" id="password" placeholder="Enter Password" />
+      </div>
+      <button onclick="login()" class="teacher__page teacher__page--button">
+        Login
+      </button>
+
+      <script>
+        function login() {
+          let password = document.getElementById("password").value;
+          let correctPassword = "haslo";
+
+          if (password === correctPassword) {
+            window.location.href = "wyniki_uczniow.php";
+          } else {
+            alert("Złe hasło :(");
+          }
+        }
+      </script>
+    </main>
+  </body>
+</html>
