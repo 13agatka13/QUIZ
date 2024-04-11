@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wyniki Quizu</title>
+    <link rel="stylesheet" href="styl.css">
 </head>
 <body>
+    <main class="teacher__delete">
     <h1>Wyniki Quizu</h1>
     <table border="1" cellspacing="2" cellpadding="2">
         <tr>
-            <th>Nazwa</th>
-            <th>Wynik</th>
-            <th>Czas</th>
+            <th class="teacher__delete--th">Nazwa</th>
+            <th class="teacher__delete--th">Wynik</th>
+            <th class="teacher__delete--th">Czas</th>
         </tr>
         <?php
         require('polaczenie.php');
@@ -32,7 +34,7 @@
     </table>
     <form method="post">
     <input type="hidden" name="deleteAll" value="1">
-    <input type="submit" value="Usuń wszystkie rekordy">
+    <input type="submit" value="Usuń wszystkie rekordy" class="teacher__delete--button">
     <?php
     if (isset($_POST['deleteAll'])) {
         require('polaczenie.php');
@@ -51,7 +53,7 @@
 ?>
 
 </form>
-
+</main>
     
 </body>
 </html>

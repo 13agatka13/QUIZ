@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/1.jpg",
     answers: [
       { text: "dog", correct: false },
@@ -9,7 +9,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/2.jpg",
     answers: [
       { text: "bat", correct: false },
@@ -18,7 +18,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/3.jpg",
     answers: [
       { text: "bee", correct: false },
@@ -27,7 +27,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/4.jpg",
     answers: [
       { text: "goat", correct: false },
@@ -36,7 +36,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/5.jpg",
     answers: [
       { text: "fish", correct: false },
@@ -45,7 +45,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/6.jpg",
     answers: [
       { text: "bird", correct: false },
@@ -54,7 +54,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/7.jpg",
     answers: [
       { text: "sheep", correct: false },
@@ -63,7 +63,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/8.jpg",
     answers: [
       { text: "owl", correct: false },
@@ -72,7 +72,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/9.jpg",
     answers: [
       { text: "elephant", correct: false },
@@ -81,7 +81,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/10.jpg",
     answers: [
       { text: "cat", correct: false },
@@ -90,25 +90,25 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/11.jpg",
     answers: [
       { text: "fox", correct: false },
-      { text: "rat", correct: true },
+      { text: "mouse", correct: true },
       { text: "cat", correct: false },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/12.jpg",
     answers: [
-      { text: "nov", correct: false },
+      { text: "butterfly", correct: false },
       { text: "bee", correct: true },
       { text: "mouse", correct: false },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/13.jpg",
     answers: [
       { text: "mouse", correct: false },
@@ -117,7 +117,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/14.jpg",
     answers: [
       { text: "whale", correct: false },
@@ -126,7 +126,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/15.jpg",
     answers: [
       { text: "whale", correct: false },
@@ -135,7 +135,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it",
     image: "img/16.jpg",
     answers: [
       { text: "whale", correct: false },
@@ -144,7 +144,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it",
     image: "img/17.jpg",
     answers: [
       { text: "goat", correct: false },
@@ -153,7 +153,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it",
     image: "img/18.jpg",
     answers: [
       { text: "ant", correct: false },
@@ -162,7 +162,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it",
     image: "img/19.jpg",
     answers: [
       { text: "bird", correct: false },
@@ -171,7 +171,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/20.jpg",
     answers: [
       { text: "owl", correct: false },
@@ -180,7 +180,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it",
     image: "img/21.jpg",
     answers: [
       { text: "cat", correct: false },
@@ -189,7 +189,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/22.jpg",
     answers: [
       { text: "cow", correct: false },
@@ -198,7 +198,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/23.jpg",
     answers: [
       { text: "cat", correct: false },
@@ -207,7 +207,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/24.jpg",
     answers: [
       { text: "dog", correct: false },
@@ -216,7 +216,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/25.jpg",
     answers: [
       { text: "bird", correct: false },
@@ -225,7 +225,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/26.jpg",
     answers: [
       { text: "camel", correct: false },
@@ -234,34 +234,34 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/27.jpg",
     answers: [
       { text: "hamster", correct: false },
       { text: "spider", correct: true },
-      { text: "lyns", correct: false },
+      { text: "lion", correct: false },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/28.jpg",
     answers: [
-      { text: "lynx", correct: false },
+      { text: "zebra", correct: false },
       { text: "sheep", correct: false },
       { text: "giraffe", correct: true },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/29.jpg",
     answers: [
       { text: "monkey", correct: false },
-      { text: "hipp", correct: true },
+      { text: "hippo", correct: true },
       { text: "elephant", correct: false },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/30.jpg",
     answers: [
       { text: "hippo", correct: false },
@@ -270,7 +270,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/31.jpg",
     answers: [
       { text: "eagle", correct: false },
@@ -279,7 +279,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/32.jpg",
     answers: [
       { text: "bear", correct: false },
@@ -288,16 +288,16 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/33.jpg",
     answers: [
       { text: "salmon", correct: false },
-      { text: "housefly", correct: true },
+      { text: "fly", correct: true },
       { text: "butterfly", correct: false },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/34.jpg",
     answers: [
       { text: "bird", correct: false },
@@ -306,7 +306,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/35.jpg",
     answers: [
       { text: "bird", correct: false },
@@ -315,7 +315,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/36.jpg",
     answers: [
       { text: "butterfly", correct: false },
@@ -324,16 +324,16 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/37.jpg",
     answers: [
       { text: "ant", correct: false },
       { text: "squirrel", correct: true },
-      { text: "starling", correct: false },
+      { text: "fox", correct: false },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/38.jpg",
     answers: [
       { text: "hen", correct: false },
@@ -342,16 +342,16 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/39.jpg",
     answers: [
-      { text: "chcik", correct: false },
+      { text: "chicken", correct: false },
       { text: "camel", correct: true },
       { text: "horse", correct: false },
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/40.jpg",
     answers: [
       { text: "pig", correct: false },
@@ -360,7 +360,7 @@ const questions = [
     ],
   },
   {
-    question: "What is the name of this animal?",
+    question: "What animal is it?",
     image: "img/41.jpg",
     answers: [
       { text: "camel", correct: false },
@@ -395,11 +395,9 @@ function ClockStart() {
   clock = setInterval(Czas, 1000);
 }
 
-document
-  .getElementById("resultsButton")
-  .addEventListener("click", function () {
-    window.location.href = "wyniki.php";
-  });
+document.getElementById("resultsButton").addEventListener("click", function () {
+  window.location.href = "wyniki.php";
+});
 
 const questionElementId = document.getElementById("pytanie");
 const answer = document.querySelector(".quiz__answers");
@@ -432,7 +430,6 @@ function getRandomElementsFromArray(
 
   return getRandomElement([...array]);
 }
-
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -523,7 +520,7 @@ function ChooseAnswer(e) {
 function ShowScore() {
   const studentName = username.value;
   Reset();
-  completionTime = shownTime.innerHTML
+  completionTime = shownTime.innerHTML;
   clearInterval(clock);
   document.getElementById(
     "pytanie"
