@@ -1,0 +1,52 @@
+.review {
+  background-color: rgb(247, 241, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.review__title {
+  font-size: 2.4em;
+}
+.review__choice {
+  border: 2px solid black;
+  border-radius: 13px;
+  font-size: 1.3em;
+  margin: 20px;
+  width: 70%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
+}
+#animals_choice {
+  background-color: rgb(247, 191, 86);
+}
+
+#places_choice {
+  background-color: #b67e7e;
+}
+#fruits_choice {
+  background-color: yellowgreen;
+}
+#clothes_choice {
+  background-color: #5fe7c7;
+}
+#vegetables_choice {
+  background-color: #d6e381;
+}
+
+.review__choice--button {
+  background-color: whitesmoke;
+  width: 100px;
+  height: 30px;
+  font-size: 0.9em;
+  border: 2px solid black;
+
+  @media (min-width: 1500px) {
+  }
+}
