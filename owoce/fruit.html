@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz dla Dzieci</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../styl.css" />
+    <link rel="shortcut icon" href="../logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <button id="resultsButton" style="display: none">
+        <a href="../teacher.html">Jestem Nauczycielem</a>
+      </button>
+      <!-- W przyszlosci mozna dodac ze kazda literka kolorowa  -->
+      <h1 id="noneH1">QUIZ DLA DZIECI</h1>
+    </header>
+    <main class="quiz">
+      <div
+        id="none"
+        class="quiz quiz__page"
+        style="background-color: yellowgreen"
+      >
+        <h2 class="quiz__page--h2">FRUIT</h2>
+      </div>
+      <div id="name-input" class="quiz quiz__input">
+        <input
+          type="text"
+          id="name"
+          class="quiz__input quiz__input--text"
+          placeholder="Podaj swoje imię"
+        />
+
+        <button id="start" class="quiz__input quiz__input--start">START</button>
+      </div>
+      <div class="quiz_icon">
+        <img src="fruit_img_main.png" alt="" class="quiz_img_main" />
+      </div>
+      <footer id="noneFooter" class="quiz__footer">
+        <p class="quiz__footer--content">
+          Stacja Edukacja Szkoła Języka Angielskiego Olszewo-Borki
+        </p>
+      </footer>
+      <!-- class unactive active!!! -->
+      <!-- line 44 -->
+      <section id="qsANDas" class="questionsANDanswers" style="display: none">
+        <div class="quiz__question" style="display: none">
+          <div id="timer">00:00</div>
+          <h2
+            class="quiz__question quiz__question--content"
+            id="pytanie"
+            style="background-color: yellowgreen"
+          >
+            Pytanie
+          </h2>
+          <div class="img">
+            <img id="animals" class="obraz" src="img/1.png" />
+          </div>
+          <div class="quiz__answers" style="background-color: yellowgreen">
+            <button class="quiz__answers quiz__answers--answer">odp1</button>
+            <button class="quiz__answers quiz__answers--answer">odp2</button>
+            <button class="quiz__answers quiz__answers--answer">odp3</button>
+          </div>
+          <div class="arrow">
+            <button id="qsNext" style="background-color: yellowgreen">
+              NEXT
+            </button>
+          </div>
+          <button id="see-results" style="display: none">Zobacz wyniki</button>
+        </div>
+        <div id="result">
+          <img src="" alt="" id="result-image" />
+          <p class="result-text"></p>
+        </div>
+      </section>
+    </main>
+    <script src="js_fruit.js"></script>
+  </body>
+</html>
