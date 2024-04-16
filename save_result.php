@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Błąd połączenia: " . $conn->connect_error);
     }
 
-    $stmt = $conn->prepare("INSERT INTO uczen (nazwa, wynik, czas) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO animals (nazwa, wynik, czas) VALUES (?, ?, ?)");
     $stmt->bind_param("sis", $nazwa, $wynik, $czas);
 
     $stmt->execute();

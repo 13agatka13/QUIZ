@@ -364,7 +364,7 @@ function ShowScore() {
   }
 
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "../save_result.php", true);
+  xhr.open("POST", "../fruit_save.php", true);
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   // xhr.onreadystatechange = function () {};
   var data =
