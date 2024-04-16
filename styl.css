@@ -391,13 +391,36 @@ header h1 {
   background-color: var(--color2);
 }
 
+/* wyniki */
 .teacher__delete {
-  background-color: var(--color1);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.teacher__delete h1 {
+  color: var(--color2);
+}
+
+.teacher__delete table {
+  width: 80%;
+  @media (min-width: 1500px) {
+    width: 60%;
+  }
+}
+.teacher__delete td {
+  text-align: center;
+  font-size: 1.2em;
+  @media (min-width: 1500px) {
+    width: 1.8em;
+  }
+}
 .teacher__delete--th {
   background-color: var(--color2);
+}
+
+input[type="submit"] {
+  margin-bottom: 50px;
+  background-color: rgb(34, 32, 32);
+  color: white;
 }
