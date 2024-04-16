@@ -524,7 +524,7 @@ function ShowScore() {
   }
 
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "../save_result.php", true);
+  xhr.open("POST", "../miejsca_save.php", true);
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   // xhr.onreadystatechange = function () {};
   var data =
@@ -547,7 +547,7 @@ function handleNextButton() {
 }
 
 document.getElementById("see-results").addEventListener("click", function () {
-  window.location.href = "../wyniki_uczniow.php";
+  window.location.href = "wyniki_miejsca.php";
 });
 
 nextButton.addEventListener("click", () => {
