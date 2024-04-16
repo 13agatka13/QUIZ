@@ -387,7 +387,7 @@ function handleNextButton() {
 }
 
 document.getElementById("see-results").addEventListener("click", function () {
-  window.location.href = "../wyniki_uczniow.php";
+  window.location.href = "wyniki_owoce.php";
 });
 
 nextButton.addEventListener("click", () => {
